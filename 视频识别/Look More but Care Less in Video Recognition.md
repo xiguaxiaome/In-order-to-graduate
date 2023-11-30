@@ -100,7 +100,7 @@ The selection step of these methods is made before the frames are sent to the cl
 
 然而，这些方法仍然完全放弃了网络识别为不重要的信息，并引入了策略网络对每个样本进行决策，这导致了额外的计算和复杂的训练策略。
 
-![image-20231124215659318](F:\论文\毕设学习\Look More but Care Less in Video Recognition.assets\image-20231124215659318.png)
+![image-20231124215659318](.\\Look More but Care Less in Video Recognition.assets\image-20231124215659318.png)
 
 #### 图1
 
@@ -326,7 +326,7 @@ Besides, we demonstrate that the dynamic selection of frames in the intermediate
 
 #### 图2 总体体系架构
 
-![image-20231125101948584](F:\论文\毕设学习\Look More but Care Less in Video Recognition.assets\image-20231125101948584.png)
+![image-20231125101948584](.\\Look More but Care Less in Video Recognition.assets\image-20231125101948584.png)
 
 Figure 2: Architecture of AF module. The module is composed of two branches, the ample branch would process all the input features in a lower resolution and reduced channel size;
 

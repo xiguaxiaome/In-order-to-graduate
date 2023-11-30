@@ -32,7 +32,7 @@ Deep learning has accelerated progress in Object Detection research [13, 53, 18,
 The number of classes that are annotated in standard vision datasets like Pascal VOC [9] and MS-COCO [31] are very low (20 and 80 respectively) when compared to the infinite number of classes that are present in the open world. <font color="red">Recognising an unknown as an unknown requires strong generalization. Scheirer et al. [56] formalises this as **Open Set classification** problem.</font> Henceforth, various methodologies (using 1-vs-rest SVMs and deep learning models) has been formulated to address this challenging setting. <font color="red">Bendale et al. [2] extends Open Set to an **Open World classification** setting by additionally updating the image classifier to recognise the identified new unknown classes. </font>Interestingly, as seen in Fig. 1, Open World object detection is unexplored, owing to the difficulty of the problem setting.
 **与开放世界中存在的无限数量的类相比，标准视觉数据集（如Pascal VOC[9]和MS-COCO[31]）中注释的类的数量非常少（分别是20和80）。<font color="#ff9580">将未知目标识别为"未知" 需要很强的泛化能力。Scheirer等人[56]将其形式化为</font><font color="red">开放集分类</font><font color="#ff9580">问题</font>。从今以后，各种方法（使用1-vs-rest支持向量机和深度学习模型）都被用来解决这一具有挑战性的问题。<font color="#ff9580">Bendale等人[2]通过额外更新图像分类器来识别新未知类别，将开放集扩展到</font><font color="red">开放世界分类</font><font color="#ff9580">设置。</font>有趣的是，如图1所示，由于问题的困难，开放世界目标检测还未被探索。**
 
-:grey_question: ![image-20231030215829431](F:\论文\毕设学习\OWOD.assets\image-20231030215829431.png)
+:grey_question: ![image-20231030215829431](.\OWOD.assets\image-20231030215829431.png)
 
 :grey_question:参考：http://t.csdnimg.cn/IwSuA
 
@@ -46,7 +46,7 @@ The number of classes that are annotated in standard vision datasets like Pascal
 
 :grey_question:3、问题难度：图像分类->图像检测(物体识别)
 
-![image-20231030151659455](F:\论文\毕设学习\OWOD.assets\image-20231030151659455.png)
+![image-20231030151659455](.\\OWOD.assets\image-20231030151659455.png)
 
 > Figure 1: Open World Object Detection(:star:) is a novel problem that has not been formally defined and addressed so far. Though related to the Open Set and Open World classification, Open World Object Detection offers its own unique challenges, which when addressed, improves the practicality of object detectors. 
 >
@@ -115,7 +115,7 @@ The $\text{Open World Object Detection}$ setting considers an object detection m
 
 ##### 图2 方法概述
 
-![image-20231030235937601](F:\论文\毕设学习\OWOD.assets\image-20231030235937601.png)
+![image-20231030235937601](.\\OWOD.assets\image-20231030235937601.png)
 
 > **Top row**: At each incremental learning step, the model identifies unknown objects (denoted by ‘?’), which are progressively labelled (as blue circles) and added to the existing knowledge base (green circles). 
 >
@@ -234,7 +234,7 @@ The above equation provides us a natural way to transform the classification hea
 
 ##### 图3 
 
-![image-20231101001717159](F:\论文\毕设学习\OWOD.assets\image-20231101001717159.png)
+![image-20231101001717159](.\\OWOD.assets\image-20231101001717159.png)
 
 > Figure 3: The energy values of the known and unknown datapoints exhibit clear separation as seen above. We fit a Weibull distribution on each of them and use these for identifying unseen known and unknown samples, as explained in Sec. 4.3
 > **图3：如上图所示，已知和未知数据点的能量值显示出明显的分离。我们在每个样本上拟合一个Weibull分布，并用这些来识别未知样本和已知样本，如第4.3节所述**

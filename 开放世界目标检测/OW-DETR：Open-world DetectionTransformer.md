@@ -58,7 +58,7 @@ Our code is available at https://github.com/akshitac8/OW-DETR.
 
 ### 图1 OW-DETR的可视化说明
 
-![image-20231127224527051](F:\论文\毕设学习\OW-DETR：Open-world DetectionTransformer.assets\image-20231127224527051.png)
+![image-20231127224527051](.\\OW-DETR：Open-world DetectionTransformer.assets\image-20231127224527051.png)
 
 Figure 1. **Visual illustration of the proposed OW-DETR for open-world object detection (OWOD)**. 
 
@@ -286,7 +286,7 @@ Then, $\mathcal{M}^t$ is incrementally trained, without retraining from scratch 
 
 #### 图2 OW-DETR框架
 
-![image-20231128153551874](F:\论文\毕设学习\OW-DETR：Open-world DetectionTransformer.assets\image-20231128153551874.png)
+![image-20231128153551874](.\\OW-DETR：Open-world DetectionTransformer.assets\image-20231128153551874.png)
 
 
 
